@@ -1,0 +1,29 @@
+{
+  "name": "adsense-auditor-2026",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "node --import tsx --test src/*.test.ts"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "description": "공개 웹사이트의 AdSense 준비 상태를 점검하고 한국어 HTML·PDF 보고서를 만드는 로컬 도구",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/we-insub/adsense-auditor-2026.git"
+  }
+}
